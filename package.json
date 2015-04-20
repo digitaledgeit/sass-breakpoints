@@ -1,0 +1,14 @@
+{
+  "name": "digitaledgeit-breakpoints",
+  "version": "0.1.0",
+  "description": "Mixins for creating breakpoints.",
+  "author": "James Newell",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/digitaledgeit/css-breakpoints.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digitaledgeit/css-breakpoints/issues"
+  },
+  "license": "MIT"
+}

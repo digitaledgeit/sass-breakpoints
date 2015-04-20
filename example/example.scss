@@ -1,0 +1,13 @@
+@import "../index";
+
+@include named_breakpoint('xs') {
+	body {
+		background-color: red;
+	}
+}
+
+@include named_breakpoint('md') {
+	body {
+		background-color: green;
+	}
+}

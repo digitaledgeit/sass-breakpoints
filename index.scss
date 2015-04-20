@@ -1,0 +1,37 @@
+
+$named_breakpoints: (
+	"xs": 0px,    //targeting <569px devices (e.g. all iPhones <6)
+	"sm": 569px,  //targeting >=569px devices (e.g. iPhones >=6)
+	"md": 768px,  //targeting >=768px tablets (e.g. portrait iPad)
+	"lg": 1004px  //targeting >=1024px tablets (e.g. landscape iPad) and desktops but leaving room for the scrollbar
+) !default;
+
+//
+/// Convert EMs to pixels
+/// @param {number} $px 	- The value (in pixels) to convert to ems
+/// @param {number} $base	- The base font size
+//
+@function em($px, $base: 16px) {
+	@return ($px / $base) * 1em;
+}
+
+//
+/// Creates a breakpoint from the specified size
+/// @param {number} $from  - The minimum width (in pixels) from which the breakpoint is effective
+//
+@mixin breakpoint($from) {
+	/* targeting devices from #{$from} */
+	@media (min-width: em($from, 16px)) { //browsers always use 16px regardless of the font-size set on the html or body elements - see http://www.filamentgroup.com/lab/how-we-learned-to-leave-body-font-size-alone.html
+		@content
+	}
+}
+
+//
+/// Wrap some content in a named breakpoint
+/// @param {string} $name - The breakpoint name e.g. "xs"
+//
+@mixin named_breakpoint($name) {
+	@include breakpoint(map-get($named_breakpoints, $name)) {
+		@content
+	}
+}
