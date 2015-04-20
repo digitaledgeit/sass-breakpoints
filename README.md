@@ -13,7 +13,7 @@ Features:
 
 ## Usage
 
-`example.scss`
+`cat example/example.scss`
 
     @import "digitaledgeit-breakpoints";
     
@@ -29,7 +29,7 @@ Features:
       }
     }
     
-`example.css`
+`sassc example/example.scss`
 
     /* targeting devices from 0px */
     @media (min-width: 0em) {
@@ -43,8 +43,6 @@ Features:
         background-color: green; }
      }
      
-    $ sassc example/example.scss
-
 ## License
 
 The MIT License (MIT)
