@@ -1,6 +1,6 @@
-# css-breakpoints
+# sass-named-breakpoints
 
-Mixins for creating breakpoints.
+Mixin for wrapping styles in known breakpoints.
 
 Features:
 
@@ -9,7 +9,7 @@ Features:
 
 ## Installation
 
-  npm install --save digitaledgeit-breakpoints
+  npm install --save sass-named-breakpoints
 
 ## Usage
 
@@ -31,18 +31,25 @@ Features:
     
 `sassc example/example.scss`
 
-    /* targeting devices from 0px */
     @media (min-width: 0em) {
       body {
         background-color: red; }
      }
     
-    /* targeting devices from 768px */
     @media (min-width: 48em) {
       body {
         background-color: green; }
      }
      
+## Defaults
+    
+    $named_breakpoints: (
+      "xs": 0px,    //targeting <569px devices (e.g. all iPhones <6)
+      "sm": 569px,  //targeting >=569px devices (e.g. iPhones >=6)
+      "md": 768px,  //targeting >=768px tablets (e.g. portrait iPad)
+      "lg": 1004px  //targeting >=1024px tablets (e.g. landscape iPad) and desktops but leaving room for the scrollbar
+    ) !default;
+
 ## License
 
 The MIT License (MIT)

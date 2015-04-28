@@ -1,14 +1,15 @@
 {
-  "name": "digitaledgeit-breakpoints",
+  "name": "sass-named-breakpoints",
   "version": "0.1.0",
-  "description": "Mixins for creating breakpoints.",
-  "author": "James Newell",
+  "author": "James Newell <james@digitaledgeit.com.au>",
+  "keywords": ["breakpoint", "sass", "libsass", "scss", "style", "npm", "import", "browserify"],
+  "description": "Mixin for wrapping styles in known breakpoints.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/digitaledgeit/css-breakpoints.git"
+    "url": "git://github.com/digitaledgeit/sass-named-breakpoints.git"
   },
   "bugs": {
-    "url": "https://github.com/digitaledgeit/css-breakpoints/issues"
+    "url": "https://github.com/digitaledgeit/sass-named-breakpoints/issues"
   },
   "license": "MIT"
 }

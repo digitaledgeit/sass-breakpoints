@@ -20,7 +20,6 @@ $named_breakpoints: (
 /// @param {number} $from  - The minimum width (in pixels) from which the breakpoint is effective
 //
 @mixin breakpoint($from) {
-	/* targeting devices from #{$from} */
 	@media (min-width: em($from, 16px)) { //browsers always use 16px regardless of the font-size set on the html or body elements - see http://www.filamentgroup.com/lab/how-we-learned-to-leave-body-font-size-alone.html
 		@content
 	}
