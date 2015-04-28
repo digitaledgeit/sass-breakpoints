@@ -1,9 +1,9 @@
 {
   "name": "sass-named-breakpoints",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "James Newell <james@digitaledgeit.com.au>",
   "keywords": ["breakpoint", "sass", "libsass", "scss", "style", "npm", "import", "browserify"],
-  "description": "Mixin for wrapping styles in known breakpoints.",
+  "description": "Mixin for wrapping styles in predefined breakpoints.",
   "repository": {
     "type": "git",
     "url": "git://github.com/digitaledgeit/sass-named-breakpoints.git"

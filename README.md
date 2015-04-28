@@ -1,6 +1,6 @@
 # sass-named-breakpoints
 
-Mixin for wrapping styles in known breakpoints.
+Mixin for wrapping styles in predefined breakpoints.
 
 Features:
 
@@ -15,7 +15,7 @@ Features:
 
 `cat example/example.scss`
 
-    @import "digitaledgeit-breakpoints";
+    @import "sass-named-breakpoints";
     
     @include named_breakpoint('xs') {
       body {
