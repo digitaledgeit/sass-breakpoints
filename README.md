@@ -97,7 +97,7 @@ CSS: `compiled.scss`
       body { color: red; }
     }
 
-### breakpoint-between($from)
+### breakpoint-between($from, $to)
     
     @include breakpoint-between('sm', 'md') { //>568px but <768px
       body { color: red; }
