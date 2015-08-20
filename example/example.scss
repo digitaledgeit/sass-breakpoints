@@ -1,13 +1,19 @@
 @import "..";
 
-@include named_breakpoint('xs') {
-	body {
-		background-color: red;
-	}
+@include breakpoint('sm') {
+  body {
+    background-color: red;
+  }
 }
 
-@include named_breakpoint('md') {
-	body {
-		background-color: green;
-	}
+@include breakpoint('md', 'lg') {
+  body {
+    background-color: green;
+  }
+}
+
+@include breakpoint('lg') {
+  body {
+    background-color: blue;
+  }
 }
