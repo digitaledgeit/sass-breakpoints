@@ -1,7 +1,8 @@
 {
   "name": "sass-breakpoints",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "James Newell <james@digitaledgeit.com.au>",
+  "description": "SASS mixins for named breakpoints.",
   "keywords": [
     "breakpoint",
     "media",
@@ -13,7 +14,6 @@
     "style",
     "sass-composer"
   ],
-  "description": "SASS mixins for named breakpoints.",
   "dependencies": {
     "sass-ems": "^1.0.3"
   },
