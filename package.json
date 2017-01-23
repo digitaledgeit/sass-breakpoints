@@ -15,6 +15,7 @@
     "sass-composer"
   ],
   "dependencies": {
+    "sass-composer": "^2.0.0-beta16",
     "sass-ems": "^1.0.3"
   },
   "repository": {
